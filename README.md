@@ -7,3 +7,13 @@ Another issue with fixed elements is that when the user can still scroll while t
 See the bug in action here: https://www.youtube.com/watch?v=Daa_ctnhG00
 
 See the bug report here: https://bugs.webkit.org/show_bug.cgi?id=207049
+
+This non-standard behavior can be somewhat remedied with this hack:
+
+```css
+html, body {
+	-webkit-overflow-scrolling : touch !important;
+	overflow: auto !important;
+	height: 100% !important;
+}
+```
