@@ -2,7 +2,7 @@
 
 When focusing on an `<input>` with `position: fixed;` Safari for iOS presents unexpected scroll jumps.
 
-Another issue with fixed elements is that when the user can still scroll while the input is focused and disappear from the viewport.
+Another issue with fixed elements is that the user can still scroll while the input is focused and disappear from the viewport (even though it shouldn't as it is fixed).
 
 See the bug in action here: https://www.youtube.com/watch?v=Daa_ctnhG00
 
